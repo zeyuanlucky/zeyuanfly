@@ -28,7 +28,7 @@ class FileSystem{
         if(!is_array($value)){
             $putValue = ['value'=>$value,'expire'=>$expire+time()];
         }else{
-            $putValue = $value;
+            $putValue['value'] = $value;
             if(!isset($value['expire'])){
                 $putValue['expire'] = time()+$expire;
             }
