@@ -1,7 +1,7 @@
 <?php
 namespace Zeyuanfly\Cache\CacheType;
 
-class PhpRedisKeyVal{
+class PhpRedisSingleKeyVal{
     private $redis = null;
 
     /**
